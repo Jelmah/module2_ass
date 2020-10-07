@@ -4,55 +4,59 @@
     padding: 0%;
     margin: 0%;
     font-family: sans-serif;
+    font-size: 16px;
 }
 h1{
     text-align: center;
-    /* font-size: 75%; */
+    font-size: 45px;
 }
-
+.secdiv1{
+    width: 95%;
+    margin: 20px auto;
+}
 .section1, .section2, .section3{
     background-color: grey;
     border: 1px solid black;
     color: white;
-    margin: 20px auto;
-    padding: 20px;
+    /* margin: 20px auto; */
     position: relative;
-    width: 98%;
+    width: 100%;
 }
 
 .title{
-    /* font-size: 25%; */
     border: 1px solid black;
+    font-size: 25px;
     text-align: center;
     padding: 5px;
-    background-color: violet;
     position: relative;
-    width: 20%;
-    left: 83.4%;
-    bottom: 21px;
+    width: 35%;
+    float: right;
+}
+.title1{background-color: green;}
+.title2{background-color: violet;}
+.title3{background-color: blue;}
+p{
+    margin: 40px 10px 10px 10px;
 }
 /* ###################### Desktop size ################## */
 @media (min-width: 992px){
+    .secdiv1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .secdiv2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .section1{
-        width: 33.3%;   
-    }
-    .section2{
-        width: 33.3%;   
-    }
-    .section3{
-        width: 33.3%;   
+        margin-right: 20px;
     }
 }
 
 /* ###################### Tablet size ################## */
 @media (min-width: 768px) and (max-width: 991px){
-    .section1{
-        width: 50%;   
-    }
-    .section2{
-        width: 50%;   
-    }
-    .section3{
-        width: 50%;   
+    .secdiv2{
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
