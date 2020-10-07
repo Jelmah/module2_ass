@@ -1,0 +1,58 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    /* font-size: 75%; */
+}
+
+.section1, .section2, .section3{
+    background-color: grey;
+    border: 1px solid black;
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    width: 98%;
+}
+
+.title{
+    /* font-size: 25%; */
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    background-color: violet;
+    position: relative;
+    width: 20%;
+    left: 83.4%;
+    bottom: 21px;
+}
+/* ###################### Desktop size ################## */
+@media (min-width: 992px){
+    .section1{
+        width: 33.3%;   
+    }
+    .section2{
+        width: 33.3%;   
+    }
+    .section3{
+        width: 33.3%;   
+    }
+}
+
+/* ###################### Tablet size ################## */
+@media (min-width: 768px) and (max-width: 991px){
+    .section1{
+        width: 50%;   
+    }
+    .section2{
+        width: 50%;   
+    }
+    .section3{
+        width: 50%;   
+    }
+}
